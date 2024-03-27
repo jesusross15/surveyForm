@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Hey! If you could take the time to answer these questions that would be wonderful!</p>
+    </header>
+
+    <form id="survey-form">
+    
+        <label id="name-label">Enter Your Full Name:
+            <input id="name" type="text" placeholder="Alex Smith" required/></label>
+        <label id="email-label">Enter Your Email:
+            <input id="email" type="email" placeholder="123@email.com" required/></label>
+        <label id="number-label">Enter Your Age (in years): 
+            <input id="number" type="number" min="13" max="120" 
+            placeholder="age" required/></label>
+        
+        <fieldset>
+        <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">text here</option>
+            <option value="2">text there</option>
+            <option value="3">text over yonder</option>
+            <option value="4">lorem ipsum</option>
+        </select>
+        </fieldset>
+
+        <fieldset id="group1">
+            <input type="radio" value="value1" name="group1">
+            <input type="radio" value="value2" name="group1">
+        </fieldset>
+
+        <fieldset id="group2">
+            <input type="radio" value="value1" name="group2">
+            <input type="radio" value="value2" name="group2">
+            <input type="radio" value="value3" name="group2">
+        </fieldset> 
+
+        <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" value="1" required name="terms-and-conditions" /> I accept the terms and conditions</a>
+      </label> 
+
+        <input class="inline" id="terms-and-conditions" type="checkbox" value="1" required name="terms-and-conditions" /> I accept the terms and conditions</a> 
+
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+
+        <input id="submit" type="submit"/>
+    </form>
+
+</body>
+</html>
