@@ -9,51 +9,74 @@
 <body>
     <header class="header">
         <h1 id="title">Survey Form</h1>
-        <p id="description">Hey! If you could take the time to answer these questions that would be wonderful!</p>
+        <p id="description">
+        Hey! If you could take the time to answer these questions that would be wonderful!
+        </p>
     </header>
 
     <form id="survey-form">
-    
-        <label id="name-label">Enter Your Full Name:
-            <input id="name" type="text" placeholder="Alex Smith" required/></label>
-        <label id="email-label">Enter Your Email:
-            <input id="email" type="email" placeholder="123@email.com" required/></label>
-        <label id="number-label">Enter Your Age (in years): 
-            <input id="number" type="number" min="13" max="120" 
-            placeholder="age" required/></label>
-        
-        <fieldset>
-        <select id="dropdown">
-            <option value="">(select one)</option>
-            <option value="1">text here</option>
-            <option value="2">text there</option>
-            <option value="3">text over yonder</option>
-            <option value="4">lorem ipsum</option>
-        </select>
-        </fieldset>
+        <div>
+            <label id="name-label">Name:
+                <input id="name" type="text" placeholder="Enter your name" required/></label>
+            <label id="email-label">Email:
+                <input id="email" type="email" placeholder="123@email.com" required/></label>
+            <label id="number-label">Age (in years): 
+                <input id="number" type="number" min="13" max="120" 
+                placeholder="Age" required/></label>
+        </div>
 
-        <fieldset id="group1">
-            <input type="radio" value="value1" name="group1">
-            <input type="radio" value="value2" name="group1">
-        </fieldset>
+        <div>
+            <p>What is your occupation?</p>
+            <select id="drop-down" name="dropDown">
+                <option disabled selected value>Select an option</option>
+                <option value="1">Student</option>
+                <option value="2">Educator</option>
+                <option value="3">Learner</option>
+                <option value="4">Wizard</option>
+                <option value="5">Other</option>
+            </select>
+        </div>
 
-        <fieldset id="group2">
-            <input type="radio" value="value1" name="group2">
-            <input type="radio" value="value2" name="group2">
-            <input type="radio" value="value3" name="group2">
-        </fieldset> 
+        <div id="group1">
+            <p>Would you recommend our service to a friend?</p>
+            <label for="definitely">
+                <input id="definitely" type="radio" value="value1" name="group1">
+                Definitely
+            </label>
 
-        <label for="terms-and-conditions">
-        <input class="inline" id="terms-and-conditions" type="checkbox" value="1" required name="terms-and-conditions" /> I accept the terms and conditions</a>
-      </label> 
+            <label for="maybe">
+                <input id="maybe" type="radio" value="value2" name="group1">
+                Maybe
+            </label>
 
-        <input class="inline" id="terms-and-conditions" type="checkbox" value="1" required name="terms-and-conditions" /> I accept the terms and conditions</a> 
+            <label for="yikes">
+                <input id="yikes" type="radio" value="value3" name="group1">
+                Not even in another lifetime.
+            </label>
+        </div>
 
-        <label for="bio">Provide a bio:
-          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
-        </label>
+        <div>
+            <label for="terms-and-conditions">
+                <input class="inline" id="terms-and-conditions" type="checkbox" value="1" required name="terms-and-conditions" /> I accept the terms and conditions</a>
+            </label> 
+            <label for="front-end"></label>
+            <label for="back-end"></label>
+            <label for="data-vis"></label>
+            <label for="videos"></label>
+            <label for="forum"></label>
+            <label for="open-source"></label>
+        </div>
 
-        <input id="submit" type="submit"/>
+        <div>
+            <label for="bio">If you have any comments or suggestions please leave them below:
+                <textarea id="comments" name="comment" rows="3" cols="30" 
+                placeholder="Enter your comments/suggestions here..."></textarea>
+            </label>
+        </div>
+
+        <div>
+            <button id="submit" type="submit">Submit</button>
+        </div>
     </form>
 
 </body>

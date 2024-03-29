@@ -1,5 +1,14 @@
+head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 body {
     background-color: navy;
     color: white;
-    font-family: Impact, serif
+    font-family: Impact, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
