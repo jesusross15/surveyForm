@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survery</title>
+    <title>Survey</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="container">
     <header class="header">
         <h1 id="title">Survey Form</h1>
         <p id="description">
@@ -16,12 +17,13 @@
 
     <form id="survey-form">
         <div class="formGroup">
-            <label id="name-label">Name:
-                <input id="name" type="text" placeholder="Enter your name" required/></label>
+            <label id="name-label">
+                <p>Name:</p>
+                <input id="name" type="text" name="name" placeholder="Enter your name" required/></label>
             <label id="email-label">Email:
-                <input id="email" type="email" placeholder="123@email.com" required/></label>
+                <input id="email" type="email" name="email" placeholder="123@email.com" required/></label>
             <label id="number-label">Age (in years): 
-                <input id="number" type="number" min="13" max="120" 
+                <input id="number" type="number" name="number" min="13" max="120" 
                 placeholder="Age" required/></label>
         </div>
 
@@ -29,11 +31,11 @@
             <p>What is your occupation?</p>
             <select id="drop-down" name="dropDown">
                 <option disabled selected value>Select an option</option>
-                <option value="1">Student</option>
-                <option value="2">Educator</option>
-                <option value="3">Learner</option>
-                <option value="4">Wizard</option>
-                <option value="5">Other</option>
+                <option value="student">Student</option>
+                <option value="educator">Educator</option>
+                <option value="learner">Learner</option>
+                <option value="wizard">Wizard</option>
+                <option value="other">Other</option>
             </select>
         </div>
 
@@ -56,19 +58,37 @@
         </div>
 
         <div class="formGroup">
+            <p>What would you like to see improved? (check all that apply)</p>
+
             <label for="terms-and-conditions">
-                <input class="inline" id="terms-and-conditions" type="checkbox" value="1" required name="terms-and-conditions" /> I accept the terms and conditions</a>
+                <input class="inline" id="challenges" type="checkbox" value="1" required name="challenges" /> Challenges</a>
             </label> 
-            <label for="front-end"></label>
-            <label for="back-end"></label>
-            <label for="data-vis"></label>
-            <label for="videos"></label>
-            <label for="forum"></label>
-            <label for="open-source"></label>
+
+            <label for="front-end">
+                <input class="inline" id="front-end" type="checkbox" value="2" required name="front-end" /> Front-end</a>
+            </label>
+
+            <label for="back-end">
+                <input class="inline" id="back-end" type="checkbox" value="3" required name="back-end" /> Back-end</a>
+            </label>
+
+            <label for="data-vis">
+                <input class="inline" id="data-vis" type="checkbox" value="4" required name="data-vis" /> Data Visualisations</a>
+            </label>
+
+            <label for="videos">
+                <input class="inline" id="videos" type="checkbox" value="5" required name="videos" /> Videos</a>
+            </label>
+
+            <label for="forum">
+                <input class="inline" id="forum" type="checkbox" value="6" required name="forum" /> Forum</a>
+            </label>
+        
         </div>
 
         <div class="formGroup">
-            <label for="bio">If you have any comments or suggestions please leave them below:
+            <label for="bio">
+                <p>If you have any comments or suggestions please leave them here:</p>
                 <textarea id="comments" name="comment" rows="3" cols="30" 
                 placeholder="Enter your comments/suggestions here..."></textarea>
             </label>
@@ -78,6 +98,7 @@
             <button id="submit" type="submit">Submit</button>
         </div>
     </form>
+</div>
 
 </body>
 </html>

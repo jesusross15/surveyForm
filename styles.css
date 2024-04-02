@@ -11,29 +11,19 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 2rem;
 }
 
 #description {
     margin-top: -1rem;
     font-family: sans-serif;
     font-style: italic;
+    text-align: center;
 }
-#survey-form {
-    font-family: Impact, serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
 
 form {
-    padding: 2.5rem;
+    padding: 40px;
     background-color: rgb(20, 30, 120);
     border-radius: 0.25rem;
-    min-width: none;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -44,18 +34,51 @@ form {
     flex-direction: column;
 }
 
+input {
+padding: 6px 12px;
+border-radius: 5px;
+border-color: white;
+}
 
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
 
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
 
+#drop-down {
+    padding: 6px 12px;
+}
 
+textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
 
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
 
-
-
-
+container {
+    max-width: 720px;
+}
 
 @media (min-width: 480px) {
-    form {
+    body {
         padding: 2.5rem;
 }
+}
+
+button {
+    padding: 10px 40px 10px 40px;
+    border-color: rgb(20, 30, 120);
 }
