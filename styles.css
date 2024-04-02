@@ -1,14 +1,61 @@
-head {
+/* * { border: 1px solid red; }*/
+
+body {
+    background-color: rgb(66, 66, 237);
+    color: white;
+    font-family: Impact, serif
+}
+
+header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
 }
 
-body {
-    background-color: navy;
-    color: white;
+#description {
+    margin-top: -1rem;
+    font-family: sans-serif;
+    font-style: italic;
+}
+#survey-form {
     font-family: Impact, serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
+
+form {
+    padding: 2.5rem;
+    background-color: rgb(20, 30, 120);
+    border-radius: 0.25rem;
+    min-width: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 480px) {
+    form {
+        padding: 2.5rem;
+}
+}

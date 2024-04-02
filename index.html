@@ -15,7 +15,7 @@
     </header>
 
     <form id="survey-form">
-        <div>
+        <div class="formGroup">
             <label id="name-label">Name:
                 <input id="name" type="text" placeholder="Enter your name" required/></label>
             <label id="email-label">Email:
@@ -25,7 +25,7 @@
                 placeholder="Age" required/></label>
         </div>
 
-        <div>
+        <div class="formGroup">
             <p>What is your occupation?</p>
             <select id="drop-down" name="dropDown">
                 <option disabled selected value>Select an option</option>
@@ -37,7 +37,7 @@
             </select>
         </div>
 
-        <div id="group1">
+        <div class="formGroup">
             <p>Would you recommend our service to a friend?</p>
             <label for="definitely">
                 <input id="definitely" type="radio" value="value1" name="group1">
@@ -55,7 +55,7 @@
             </label>
         </div>
 
-        <div>
+        <div class="formGroup">
             <label for="terms-and-conditions">
                 <input class="inline" id="terms-and-conditions" type="checkbox" value="1" required name="terms-and-conditions" /> I accept the terms and conditions</a>
             </label> 
@@ -67,14 +67,14 @@
             <label for="open-source"></label>
         </div>
 
-        <div>
+        <div class="formGroup">
             <label for="bio">If you have any comments or suggestions please leave them below:
                 <textarea id="comments" name="comment" rows="3" cols="30" 
                 placeholder="Enter your comments/suggestions here..."></textarea>
             </label>
         </div>
 
-        <div>
+        <div class="formGroup">
             <button id="submit" type="submit">Submit</button>
         </div>
     </form>
